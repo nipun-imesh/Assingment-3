@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJSE Web Page</title>
+
+    <style>
+        .navbar{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;  
+            margin-top: 0;          
+        }
+
+        .navbar-nav,
+        .nave-slidebar{
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .navbar-nav{   
+            justify-content: center;
+            position: absolute;
+            right: 40px;
+            gap: 15px;
+        }
+
+        .navbar-nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .section-content{
+            display: flex;
+        }
+
+        .nave-slidebar{
+            position: relative;
+            line-height: 30px;
+            padding-top: 20px;
+            flex-direction: column;
+            margin: 0;
+            width: 300px;
+            height: 83vh;
+            background-color: blue;
+        }
+
+        
+        .nave-slidebar a{
+            margin-left: 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        .gif{
+            margin: 5px 0 0 10px ;
+        }
+
+        .gif-content {
+            display: flex;
+            width: 80vw;
+            height: 306.5px;
+            gap: 1px;
+            border-width: 2px;
+            border-style: solid;
+            background-color: black;
+            border-color: black;
+            border-style: solid; 
+        }
+
+        .gif-content img{
+            width: 500px;
+            height: 100%;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border-width: 2px;
+            background-color: gray;
+        }
+
+        footer p{
+            color: white;
+        }
+
+        p{ 
+            line-height: 14.5px;
+            margin-bottom: 4px;
+            margin-top: 15px;
+        }
+
+        .logo{
+            width: 130px;
+            height: auto;
+            margin-left: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <img  class="logo" src="ijse.png" alt="asdf" >
+        </div>
+        <div class="navbar-nav">
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+            <a href="">About Us</a>
+        </div>
+    </nav>
+    <section class="section-content">
+        <figure class="nave-slidebar">
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+            <a href="">About Us</a>
+        </figure>
+        <figure class="gif">
+            <div class="gif-content">
+                <img src="monkeyGif.gif" alt="gif">
+                <img src="monkeyGif.gif" alt="gif">
+                <img src="monkeyGif.gif" alt="gif">
+            </div>
+            <div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, deleniti repellendus maxime laboriosam corporis, accusantium sit itaque enim qui voluptates iste veniam earum soluta similique eos adipisci? Saepe, suscipit quidem.</p>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nam, excepturi nostrum doloremque quia pariatur aut a sed omnis accusantium earum debitis laborum natus perspiciatis similique in reiciendis hic unde.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.</p>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nam, excepturi nostrum doloremque quia pariatur aut a sed omnis accusantium earum debitis laborum natus perspiciatis similique in reiciendis hic unde.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.</p>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nam, excepturi nostrum doloremque quia pariatur aut a sed omnis accusantium earum debitis laborum natus perspiciatis similique in reiciendis hic unde.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.</p>
+          
+            </div>
+        </figure>
+    </section>
+    <section>
+        <footer class="footer">
+            <p>
+                Develped By IJSE
+            </p>
+        </footer>
+    </section>
+</body>
+
+</html>
