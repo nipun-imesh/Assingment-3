@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <title>Document</title>
+
+    <style>
+        .section-content {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .first-box {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            border: 15px solid rgb(61, 61, 61);
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .second-box {
+            position: fixed;
+            width: 172px;
+            height: 172px;
+            border: 15px solid rgb(226, 4, 4);
+            border-radius: 100%;
+        }
+        
+        .third-box-1,
+        .third-box-2,
+        .third-box-3 {
+            display: flex;
+            position: static;
+            justify-content: center;
+            align-items: center;
+            width: 172px;
+            height: 172px;
+            border-radius: 100%;
+            margin-left: 45vw;
+            margin-top: 37.2vh;
+        }
+
+        .third-box-1 {
+            background-color: purple;
+        }
+
+        .third-box-2 {   
+            background-color: rgb(13, 223, 220);
+        }
+
+        .third-box-3 {
+            background-color: rgb(220, 136, 32);
+        }
+
+        p{
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="section-content">
+        <div class="first-box">
+            <div class="second-box">
+              
+            </div>
+        </div>
+        <div class="third-box-1">
+            <p>Hello</p>
+        </div>
+    </section>
+
+    <section class="section-content">
+            <div class="third-box-2">
+                <p>Welcome To</p>
+            </div>
+    </section>
+
+    <section class="section-content">
+        <div class="third-box-3">
+                <p>institute of Softwere Engineering</p>
+        </div>
+    </section>
+</body>
+
+</html>
