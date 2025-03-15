@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 3px solid rgb(187, 95, 15);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 50%;
+            animation-name: identifier;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes identifier {
+            from{
+                width: 0;
+                height: 0;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+                opacity: 0;
+            }
+            
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <section>
+        <div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
