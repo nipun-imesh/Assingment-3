@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        main{
+            overflow: hidden;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+            border: red solid 5px;
+        }
+
+        section{
+
+            display: flex;
+            width: fit-content;
+            animation: slide-annimation;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            
+        }
+
+        img{
+            width: 50vw;
+            height: 50vh;
+        }
+
+        @keyframes slide-annimation {
+
+            0% , 20%{
+                transform: translateX(0);
+            }
+
+            25% , 45%{
+                transform: translateX(-25%);
+            }
+
+            50% , 70%{
+                transform: translateX(-50%);
+            }
+
+            75% , 100%{
+                transform: translateX(-75%);
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<main>
+    <section>
+
+       <img src="animation_slide/slide1.jpeg" alt="">
+       <img src="animation_slide/slide2.jpeg" alt="">
+       <img src="animation_slide/slide3.jpeg" alt="">
+       <img src="animation_slide/slide4.jpeg" alt="">
+
+    </section>
+</main>
+</body>
+</html>
