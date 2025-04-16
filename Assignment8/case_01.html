@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  section {
+    display: flex;
+    justify-content: center;
+    padding: 250px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+
+  div {
+    margin-left: 20px;
+    /* Space between divs and images */
+  }
+</style>
+
+<body>
+  <section>
+    <div>
+      <h1>A</h1>
+    </div>
+    <img src="image_processing20200316-8481-8b3em1.gif" width="100" height="100">
+    <div>
+      <h1>B</h1>
+    </div>
+    <img src="image_processing20200316-8481-8b3em1.gif" width="100" height="100">
+    <div>
+      <h1>C</h1>
+    </div>
+    <img src="image_processing20200316-8481-8b3em1.gif" width="100" height="100">
+    <div>
+      <h1>D</h1>
+    </div>
+    <img src="image_processing20200316-8481-8b3em1.gif" width="100" height="100">
+    <div>
+      <h1>E</h1>
+    </div>
+    <img src="image_processing20200316-8481-8b3em1.gif" width="100" height="100">
+    <div>
+      <h1>F</h1>
+    </div>
+    <img src="image_processing20200316-8481-8b3em1.gif" width="100" height="100">
+  </section>
+
+  <script>
+    let arr = ["A", "B", "C", "D", "E", "F"]
+
+    setInterval(() => {
+      let last_value = arr.pop()
+      arr.unshift(last_value)
+      console.log(arr)
+
+      document.getElementsByTagName("h1")[0].innerText = arr[0]
+      document.getElementsByTagName("h1")[1].innerText = arr[1]
+      document.getElementsByTagName("h1")[2].innerText = arr[2]
+      document.getElementsByTagName("h1")[3].innerText = arr[3]
+      document.getElementsByTagName("h1")[4].innerText = arr[4]
+      document.getElementsByTagName("h1")[5].innerText = arr[5]
+    }, 800)
+  </script>
+</body>
+
+</html>
